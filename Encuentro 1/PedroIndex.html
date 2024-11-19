@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Landing Page para promocionar productos y servicios">
+    <title>Landing Page</title>
+</head>
+
+<body>
+    <header>
+        <h1>Bienvenido a Nuestra Landing Page</h1>
+        <p>Tu oportunidad para descubrir nuestros productos y servicios</p>
+    </header>
+    <main>
+        <section id="hero">
+            <header>
+                <h2>¡Descubre lo mejor de nuestro servicio!</h2>
+            </header>
+            <p>Haz clic en el botón para más detalles sobre cómo podemos ayudarte.</p> <a href="#cta"><button>Descubre
+                    más</button></a>
+        </section>
+        <figure> <img src="" alt="Imagen no Disponible">
+            <figcaption> Pie de imagen </figcaption>
+        </figure>
+        <section id="features">
+            <header>
+                <h2>Características</h2>
+            </header>
+            <article>
+                <h3>Rápido y Eficiente</h3>
+                <p>Con nuestra tecnología avanzada, los procesos se vuelven más rápidos y fáciles.</p>
+            </article>
+            <article>
+                <h3>Diseño Moderno</h3>
+                <p>Las interfaces de usuario están pensadas para ofrecer la mejor experiencia.</p>
+            </article>
+            <article>
+                <h3>Soporte 24/7</h3>
+                <p>Siempre estamos disponibles para ayudarte en cualquier momento del día.</p>
+            </article>
+        </section>
+        <section id="testimonials">
+            <header>
+                <h2>Lo que dicen nuestros usuarios</h2>
+            </header>
+            <blockquote> "Este servicio ha cambiado mi forma de trabajar. ¡Altamente recomendado!" <footer>- Usuario
+                    satisfecho</footer>
+            </blockquote>
+            <blockquote> "La mejor inversión que he hecho para mi negocio." <footer>- Emprendedor feliz</footer>
+            </blockquote>
+        </section>
+        <section id="cta">
+            <header>
+                <h2>¡No esperes más, únete ahora!</h2>
+            </header>
+            <p>Completa el formulario para obtener más información o comenzar tu prueba gratuita.</p>
+            <form action="/submit" method="POST">
+                <fieldset>
+                    <legend>Información de Contacto</legend> <label for="email">Correo Electrónico:</label> <input
+                        type="email" id="email" name="email" required> <label for="name">Nombre Completo:</label> <input
+                        type="text" id="name" name="name" required> <label for="phone">Número de Teléfono:</label>
+                    <input type="tel" id="phone" name="phone" pattern="^\+?[1-9]\d{1,14}$" placeholder="+34 612 345 678"
+                        required> <label for="message">Mensaje:</label> <textarea id="message" name="message" rows="4"
+                        required></textarea>
+                </fieldset>
+                <fieldset>
+                    <legend>Selecciona el servicio que deseas</legend> <label for="service">Paquete de Servicio:</label>
+                    <select id="service" name="service" required>
+                        <option value="" disabled selected>Selecciona un paquete</option>
+                        <option value="basico">Básico</option>
+                        <option value="avanzado">Avanzado</option>
+                        <option value="premium">Premium</option>
+                    </select> <label for="preferences">Preferencias Adicionales:</label>
+                    <div> <input type="checkbox" id="newsletter" name="preferences" value="newsletter"> <label
+                            for="newsletter">Suscribirse al boletín de noticias</label> </div>
+                    <div> <input type="checkbox" id="contact_updates" name="preferences" value="contact_updates"> <label
+                            for="contact_updates">Recibir actualizaciones de contacto</label> </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Selecciona tu disponibilidad</legend> <label for="available_date">Fecha Disponible:</label>
+                    <input type="date" id="available_date" name="available_date" required> <label
+                        for="available_time">Hora Preferida:</label> <input type="time" id="available_time"
+                        name="available_time" required>
+                </fieldset>
+                <fieldset>
+                    <legend>Aceptación de Términos</legend>
+                    <div> <input type="radio" id="accept_terms" name="terms" value="accept" required> <label
+                            for="accept_terms">Acepto los términos y condiciones</label> </div>
+                </fieldset> <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <nav>
+            <ul>
+                <li><a href="#hero">Inicio</a></li>
+                <li><a href="#features">Características</a></li>
+                <li><a href="#testimonials">Testimonios</a></li>
+                <li><a href="#cta">Contactar</a></li>
+            </ul>
+        </nav>
+        <p>&copy; 2024 Todos los derechos reservados</p>
+    </footer>
+</body>
+
+</html>
