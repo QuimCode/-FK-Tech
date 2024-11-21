@@ -1,0 +1,21 @@
+/* Selectores de ID, clase y descendientes, hermanos, etc. */
+/* Estos pueden incluir el resto de tus estilos o ajustes que necesites */
+/* Ajustes en píxeles, porcentajes, em, rem, vh y vw */
+#header h1 {
+    font-size: 2em;
+    /* Tamaño relativo */
+}
+
+.navegacion ul {
+    padding: 0.5rem;
+}
+
+aside,
+.contenido {
+    font-size: 1rem;
+}
+
+footer p {
+    font-size: 1vw;
+    /* Tamaño relativo a la anchura de la ventana */
+}
