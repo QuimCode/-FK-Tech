@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FKtech</title> <!-- CSS Externo -->
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="media-queries.css"> <!-- CSS Interno -->
+    <style>
+        /* Selector de ID */
+        #header {
+            text-align: center;
+            padding: 1rem;
+            background-color: rgba(0, 128, 255, 0.7);
+            /* Color RGBA */
+            color: #fff;
+        }
+
+        /* Selector de clase */
+        .navegacion {
+            background-color: hsla(240, 100%, 50%, 0.5);
+            /* Color HSLA */
+            padding: 0.5rem;
+        }
+
+        /* Selector de elemento */
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+        }
+
+        /* Selector de hermanos adyacentes */
+        .navegacion ul li+li {
+            margin-left: 1em;
+        }
+
+        /* Selector de descendiente */
+        .navegacion ul li a {
+            text-decoration: none;
+            color: #000;
+        }
+
+        /* Aside flotante */
+        aside {
+            width: 25%;
+            height: 800px;
+            float: left;
+            background-color: #f0f0f0;
+            padding: 1em;
+            margin-right: 1%;
+            box-sizing: border-box;
+        }
+
+        /* Aside flotante derecho */
+        aside.right {
+            float: right;
+            margin-right: 0;
+            margin-left: 1%;
+        }
+
+        /* Sección de contenido principal */
+        .contenido {
+            width: 40%;
+            float: left;
+            padding: 1em;
+            background-color: #fff;
+        }
+
+        /* Clear para el footer */
+        footer {
+            clear: both;
+            text-align: center;
+            padding: 1em;
+            background-color: #333;
+            color: #fff;
+        }
+
+        /* Box-sizing ejemplos */
+        .box1,
+        .box2 {
+            padding: 1rem;
+            border: 1px solid #000;
+            margin: 1rem;
+        }
+
+        .box1 {
+            box-sizing: content-box;
+            width: 100%;
+            background-color: #ff0;
+        }
+
+        .box2 {
+            box-sizing: border-box;
+            width: 100%;
+            background-color: #f00;
+        }
+
+        /* Estilos para imagen */
+        .imagen-con-descripcion img {
+            width: 100%;
+            height: auto;
+            border: 2px solid blue;
+            outline: 2px solid #000;
+            outline-offset: 10px;
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+            /* Sombra */
+        }
+
+        .imagen-con-descripcion p {
+            text-align: center;
+            font-size: 1em;
+            color: #555;
+        }
+    </style>
+</head>
+
+<body> <!-- Header -->
+    <header id="header">
+        <h1>Capacitaciones en FKtech</h1>
+    </header> <!-- Barra de Navegación -->
+    <nav class="navegacion">
+        <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Servicios</a></li>
+            <li><a href="#">Acerca</a></li>
+            <li><a href="#">Contacto</a></li>
+        </ul>
+    </nav> <!-- Asides y Contenido Principal -->
+    <aside>
+        <h2>Aside Izquierdo</h2>
+        <p>Contenido adicional a la izquierda.</p>
+    </aside>
+    <aside class="right">
+        <h2>Aside Derecho</h2>
+        <p>Contenido adicional a la derecha.</p>
+    </aside>
+    <section class="contenido">
+        <h2>Contenido Principal</h2>
+        <p>Esta es la sección principal del contenido. Aquí puedes colocar tu información principal.</p>
+        <!-- Ejemplos de Box-sizing -->
+        <div class="box1">Box-sizing: content-box</div>
+        <div class="box2">Box-sizing: border-box</div> <!-- Imagen con Descripción -->
+        <div class="imagen-con-descripcion"> <img src="FK.png" alt="Descripción de la imagen">
+            <p>Descripción breve de la imagen.</p>
+        </div>
+    </section> <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Ejemplo. <small><em>Todos los derechos reservados.</em></small> </p>
+    </footer>
+</body>
+
+</html>
