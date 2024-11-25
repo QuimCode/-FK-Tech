@@ -19,3 +19,10 @@ footer p {
     font-size: 1vw;
     /* Tamaño relativo a la anchura de la ventana */
 }
+
+
+/*=======================================================*/
+
+.nav {
+    background-color: #348a50;
+}
