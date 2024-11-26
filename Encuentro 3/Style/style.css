@@ -3,9 +3,3 @@ body {
     background-color: bisque;
 }
 
-main {
-    background-image: url('./Addons/backgroundPage.webp');
-    background-repeat: no-repeat; /* Evita que el gif se repita */
-    background-size: cover; /* Ajusta el tamaño del gif al contenedor */
-    background-position: center; /* Centra el gif dentro del contenedor */
-}
