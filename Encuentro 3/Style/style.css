@@ -1,5 +1,40 @@
 
 body {
     background-color: bisque;
+    padding: 0%;
+    margin: auto;
 }
 
+.navbar {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    background-color: #b8b8b8;
+    /* padding: 5px; */
+    align-items: center;
+}
+
+.logo-navbar {
+    width: 190px;
+    height: 80px;
+    display: inline;
+    margin-left: 15px;
+    background-color: #348a5100; /* Este es un color transparente */
+    /* border: 5px solid aqua; */
+}
+
+.tittle-navbar {
+    color: rgb(172, 27, 27);
+    font-size: 54px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: inline;
+    margin-bottom: 64px;
+    margin-left: 10px;
+    /* border: 5px solid aqua;  */
+    /* margin-left: 20px; */
+}
+
+.list-navbar {
+    margin-left: 50%;
+    justify-content: space-betweens;
+}
