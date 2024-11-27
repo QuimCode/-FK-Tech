@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fk{Otter}</title>
+    <link rel="stylesheet" href="Style/style.css">
+    <link rel="stylesheet" href="Style/style2.css">
+    <link rel="icon" href="Addons/nutriaicon.png">
+</head>
+
+<body> <!-- Encabezado -->
+    <header>
+        <h1> Bienvenidos FK{Otter} </h1>
+    </header> <!-- Barra de navegación -->
+    <nav>
+        <ul>
+            <li><a href="#piepagina" class="nav-link" data-opcion="Opción 1">Formulario</a></li>
+            <li><a href="https://es.wikipedia.org/wiki/Lutrinae" class="nav-link" data-opcion="Opción 2" target="_blank">Wiki Otter</a></li>
+            <li><a href="https://www.youtube.com/shorts/rwGTVGAsGEM" class="nav-link" data-opcion="Opción 3" target="_blank">Chispas</a></li>
+            <li><a href="https://giphy.com/explore/nutrias" class="nav-link" data-opcion="Opción 4" target="_blank">GIPHY</a></li>
+            <li><a href="https://www.fktech.net/es/" class="nav-link" data-opcion="Opción 5" target="_blank">FK{tech}</a></li>
+        </ul>
+    </nav> <!-- Barra lateral -->
+    <aside>
+        <blockquote> "Bienvenidos a FK{Otter}, esta es una pagina parodia sobre nutrias, los bichos mas bellos del universo.
+            aprenda mas de ellos aqui:</blockquote>
+            <a class="aside-a" href="https://es.wikipedia.org/wiki/Lutrinae" class="nav-link" data-opcion="Opción 2" target="_blank">Wiki Otter</a>
+    </aside> <!-- Sección principal -->
+    <main>
+        <article>
+            <section>
+                <h2>Artículo Principal</h2> <img src="Addons/nutria2.jpg" alt="Imagen de ejemplo">
+                <p>Este es el texto del artículo principal que se muestra en la landing page.</p>
+            </section>
+        </article> <!-- Formulario -->
+        <form id="formulario">
+            <fieldset>
+                <legend>Datos Personales</legend> <label for="nombre">Nombre:</label> <input type="text" id="nombre"
+                    name="nombre" required> <label for="email">Correo Electrónico:</label> <input type="email"
+                    id="email" name="email" required> <label for="edad">Edad:</label> <input type="number" id="edad"
+                    name="edad" required> <button type="submit">Enviar</button>
+            </fieldset>
+        </form>
+    </main> <!-- Pie de página -->
+    <footer id="piepagina">
+        <p>&copy; 2024 Mi Empresa. Todos los derechos reservados.</p>
+    </footer>
+    <script src="Script/form.js"></script>
+</body>
+
+</html>
